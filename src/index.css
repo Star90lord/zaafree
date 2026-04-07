@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-w-80 bg-slate-100 font-sans text-slate-950 antialiased;
+  }
+
+  button,
+  a,
+  input,
+  select {
+    @apply transition duration-200 ease-out;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+}
